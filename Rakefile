@@ -23,7 +23,7 @@ Rake::ExtensionTask.new("epaper", GEMSPEC) do |ext|
   ext.lib_dir = "lib/epaper"
 end
 
-task default: %i[fetch_waveshare_files clobber compile]
+task default: %i[clobber compile]
 
 task :fetch_waveshare_files do
   WaveshareFetcher.new.call

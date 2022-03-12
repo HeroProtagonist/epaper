@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    epaper (0.1.0)
+    epaper (0.1.1)
       octokit (~> 4.22.0)
       rmagick (~> 4.2.4)
 
