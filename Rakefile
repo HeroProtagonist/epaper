@@ -14,7 +14,12 @@ require "rake/extensiontask"
 
 task build: :compile
 
-Rake::ExtensionTask.new("epaper") do |ext|
+GEMSPEC = Gem::Specification.load("epaper.gemspec")
+
+Gem::PackageTask.new(GEMSPEC) do |pkg|
+end
+
+Rake::ExtensionTask.new("epaper", GEMSPEC) do |ext|
   ext.lib_dir = "lib/epaper"
 end
 
