@@ -13,4 +13,6 @@ gem "rspec", "~> 3.0"
 
 gem "rubocop", "~> 1.21"
 
-gem "octokit"
+gem "octokit", "~> 4.22.0"
+
+gem "rmagick", "~> 4.2.4"

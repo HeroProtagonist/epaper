@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     epaper (0.1.0)
+      octokit (~> 4.22.0)
+      rmagick (~> 4.2.4)
 
 GEM
   remote: https://rubygems.org/
@@ -47,6 +49,7 @@ GEM
       rake
     regexp_parser (2.2.1)
     rexml (3.2.5)
+    rmagick (4.2.4)
     rspec (3.11.0)
       rspec-core (~> 3.11.0)
       rspec-expectations (~> 3.11.0)
@@ -83,9 +86,10 @@ PLATFORMS
 
 DEPENDENCIES
   epaper!
-  octokit
+  octokit (~> 4.22.0)
   rake (~> 13.0)
   rake-compiler
+  rmagick (~> 4.2.4)
   rspec (~> 3.0)
   rubocop (~> 1.21)
 
